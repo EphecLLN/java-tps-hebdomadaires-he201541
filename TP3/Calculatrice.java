@@ -9,6 +9,9 @@ public class Calculatrice {
 	
 	double valeurCourante; // Stocke la valeur affichée sur l'écran de la calculatrice
 	
+	Calculatrice (double n){
+		valeurCourante = n;
+	}
 	/**
 	 * Additionne un nombre à la valeur courante
 	 * @param n le nombre à ajouter à la valeur courante de la calculatrice
@@ -35,7 +38,7 @@ public class Calculatrice {
 	 * @param args les arguments de la ligne de commande
 	 */
 	public static void main(String[] args) {
-		Calculatrice myCalc = new Calculatrice();
+		Calculatrice myCalc = new Calculatrice(4);
 		myCalc.ajoute(5);
 		myCalc.soustrait(2);
 		System.out.println(myCalc.valeurCourante);

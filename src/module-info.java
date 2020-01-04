@@ -5,5 +5,5 @@
  * @author user
  *
  */
-module java {
+module tp03 {
 }
